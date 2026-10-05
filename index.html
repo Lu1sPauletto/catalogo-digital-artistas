@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo Digital de Artistas Locais | Passo Fundo - RS</title>
+  <meta name="description" content="Conheça músicos e artistas locais de Passo Fundo - RS. Projeto de extensão universitária de difusão e valorização cultural.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topo">
+    <a href="index.html" class="marca"><span class="marca-icone">♪</span> Artistas de Passo Fundo</a>
+    <nav><a href="#sobre">Sobre</a><a href="#catalogo">Catálogo</a></nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-bg"></div>
+      <p class="selo">Projeto de Extensão · Programa de Ação e Difusão Cultural</p>
+      <h1>Conheça os artistas que dão voz à <em>cultura de Passo Fundo</em></h1>
+      <p class="hero-sub">Um catálogo digital público para descobrir músicos e cantores locais e conectar-se diretamente com eles.</p>
+      <a href="#catalogo" class="btn" id="btn-descobrir">Descubra os artistas ↓</a>
+    </section>
+
+    <section id="sobre" class="sobre">
+      <div class="sobre-grid">
+        <div class="cartao-info">
+          <h2>Sobre o projeto</h2>
+          <p>Este catálogo é fruto de um projeto de extensão do curso de Ciência da Computação, vinculado ao Programa de Ação e Difusão Cultural. Nosso objetivo é dar visibilidade ao trabalho de músicos e artistas locais e valorizar a cena cultural da cidade.</p>
+          <p>Igrejas e comunidades que não possuem coral ou músicos podem encontrar artistas aqui e contatá-los diretamente, sem intermediação.</p>
+        </div>
+        <blockquote class="depoimento">
+          <p>“A iniciativa possibilita dar maior visibilidade ao trabalho dos músicos e cantores que participam das atividades do grupo. O catálogo também pode ser uma ferramenta útil para aproximar artistas de igrejas e comunidades que necessitam de músicos ou grupos de canto para suas celebrações.”</p>
+          <footer>— Eduardo Almeida, Coordenador do Grupo Folclore do CLJ</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <section id="catalogo" class="catalogo">
+      <h2>Catálogo de artistas</h2>
+      <div class="filtros">
+        <input type="search" id="busca" placeholder="Buscar por nome ou instrumento..." aria-label="Buscar artista">
+        <div class="chips" id="chips" role="group" aria-label="Filtrar por estilo"></div>
+      </div>
+      <p class="contagem" id="contagem"></p>
+      <div class="grade" id="grade"></div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>Catálogo Digital de Artistas Locais · Passo Fundo - RS</p>
+    <p class="mini">Projeto de extensão universitária sem fins comerciais. O contato é feito diretamente com cada artista.</p>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
